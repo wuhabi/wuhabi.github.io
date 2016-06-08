@@ -5,7 +5,7 @@
 	<style type="text/css">
 	h1 {color: red}
 	body {
-		font-family:'Sans-Serif';
+		font-family: "Times New Roman",Georgia,Serif;
 		margin: 60px auto;
 		width: 55%;
 	}
@@ -29,10 +29,11 @@
 <body>
 	<nav>
 		<ul>
-			<li><a href="#">Home</a></li>
+			<li><a href="/">Home</a></li>
+			<li><a href="#profile">Profile</a></li>
 			<li><a href="#projects">Projects</a></li>
+			<li><a href="#publications">Publications</a></li>
 			<li><a href="/wuhabi.pdf">CV</a></li>
-			<li><a href="/">About</a></li>
 		</ul>
 	</nav>
 	<div>
@@ -55,20 +56,11 @@
 	</table>
 	</div>
 	<div>
-	<p> <h2>Profile</h2> </p>
+	<p> <h2><a name='profile'></a>Profile</h2> </p>
 	<p>Wu is currently a Master candidate at Fudan University, and will join Baidu as a R&D engineer.  His major interests include machine learning, artificial neural networks and text mining.</p>
-	<p> <h2> <a name='projects'></a>Projects</h2></p>
+	<p> <h2><a name='projects'></a>Projects</h2></p>
 	<p>Work at Fudan:</p>
 	<table valign='top' border='0' cellpadding='2' cellspacing='2' >
-		<tr>
-			<td valign='top'><p>
-			<img src="/pic/aspect.png" height="100" width="100" />
-			</p></td>
-			<td valign='top' style="padding-left:30px">
-			<h4>Aspect-based opinion mining with convolutional neural networks</h4>
-			We propose a Convolutional Neural Network (CNN) based method, cascaded CNN (C-CNN). C-CNN contains two levels of convolutional networks. Multiple CNNs at level 1 deal with aspect mapping task. If a review sentence belongs to pre-defined aspect categories, a single CNN at level 2 determines its sentiment polarity.
-			</td>
-		</tr>
 		<tr>
 			<td valign='top'><p>
 			<img src="/pic/max-pooling drop.png" height="100" width="100" />
@@ -80,15 +72,24 @@
 		</tr>
 		<tr>
 			<td valign='top'><p>
+			<img src="/pic/aspect.png" height="100" width="100" />
+			</p></td>
+			<td valign='top' style="padding-left:30px">
+			<h4>Aspect-based opinion mining with convolutional neural networks</h4>
+			We propose a Convolutional Neural Network (CNN) based method, cascaded CNN (C-CNN). C-CNN contains two levels of convolutional networks. Multiple CNNs at level 1 deal with aspect mapping task. If a review sentence belongs to pre-defined aspect categories, a single CNN at level 2 determines its sentiment polarity.
+			</td>
+		</tr>
+		<tr>
+			<td valign='top'><p>
 			<img src="/pic/over-weighting.png" height="100" width="100" />
 			</p></td>
 			<td valign='top' style="padding-left:30px">
 			<h4>Supervised term weighting for text categorization</h4>
-			This paper shows that supervised term weighting should not just assign large weights to imbalanced terms, but should also control the trade-off between over-weighting and under-weighting. To prevent over-weighting, we present three regularization techniques: add-one smoothing, sublinear scaling and bias term. 
+			We show that supervised term weighting should not just assign large weights to imbalanced terms, but should also control the trade-off between over-weighting and under-weighting. To prevent over-weighting, we present three regularization techniques: add-one smoothing, sublinear scaling and bias term. 
 			</td>
 		</tr>	
 	</table>
-	<p> <h2>Publications</h2> </p>
+	<p> <h2><a name='publications'></a>Publications</h2> </p>
 	<p>[1] Haibing Wu, Xiaodong Gu. Balancing between over-weighting and under-weighting in supervised term weighting. arXiv:1604.04007.</p>
 	<p>[2] Haibing Wu, Yiwei Gu, Shangdi Sun, Xiaodong Gu. Aspect-based opinion summarization with convolutional neural networks. The 2016 International Joint Conference on Neural Networks (IJCNN 2016), Vancouver, Canada.</p>
 	<p>[3] Haibing Wu, Xiaodong Gu. Towards dropout training for convolutional neural networks. Neural Networks. 2015, 71: 1-10.</p>
