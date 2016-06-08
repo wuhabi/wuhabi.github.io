@@ -1,15 +1,100 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Haibing Wu's Homepage</title>
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-		<p>
-	  	<a href="/wuhaibing.pdf">CV</a>
-	  	</p>
-	  	<p>
-	  	<img src="/pic/whb.jpg" height="160" width="120" />
-	  	</p>
-	</body>
+<html lang="en">
+<head>
+	<title>Haibing Wu's Homepage</title>
+	<style type="text/css">
+	h1 {color: red}
+	body {
+		font-family:'Sans-Serif';
+		margin: 60px auto;
+		width: 55%;
+	}
+	nav ul {
+		font-family:'Helvetica', 'Arial', 'Sans-Serif';
+		padding: 0px;
+		list-style: none;
+		font-weight: bold;
+	}
+	nav ul li, footer ul li {
+		display: inline;
+		margin-right: 60px;
+	}
+	a {
+		text-decoration: none;
+		color: #999;
+	}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#projects">Projects</a></li>
+			<li><a href="/wuhabi.pdf">CV</a></li>
+			<li><a href="/">About</a></li>
+		</ul>
+	</nav>
+	<div>
+	<table valign='top' border='0' cellpadding='2' cellspacing='2' >
+		<tr>
+			<td valign='top' style="padding-top:10px"><p>
+			<img src="/pic/whb.jpg" height="136" width="102" />
+			</p></td>
+			<td valign='top' style="padding-left:50px">
+			<p><h2>Haibing Wu</h2></p>
+			<p style="line-height:1.5">
+			Master candidate<br />
+			Department of Electronic Engineering, Fudan University<br />
+			220 Handan Rd., Shanghai 200433, China<br />
+			Email: haibingwu13@fudan.edu.cn, imwuhaibing@gmail.com
+			</p>
+			
+			</td>
+		</tr>   
+	</table>
+	</div>
+	<div>
+	<p> <h2>Profile</h2> </p>
+	<p>Wu is currently a Master candidate at Fudan University, and will join Baidu as a R&D engineer.  His major interests include machine learning, artificial neural networks and text mining.</p>
+	<p> <h2> <a name='projects'></a>Projects</h2></p>
+	<p>Work at Fudan:</p>
+	<table valign='top' border='0' cellpadding='2' cellspacing='2' >
+		<tr>
+			<td valign='top'><p>
+			<img src="/pic/aspect.png" height="100" width="100" />
+			</p></td>
+			<td valign='top' style="padding-left:30px">
+			<h4>Aspect-based opinion mining with convolutional neural networks</h4>
+			We propose a Convolutional Neural Network (CNN) based method, cascaded CNN (C-CNN). C-CNN contains two levels of convolutional networks. Multiple CNNs at level 1 deal with aspect mapping task. If a review sentence belongs to pre-defined aspect categories, a single CNN at level 2 determines its sentiment polarity.
+			</td>
+		</tr>
+		<tr>
+			<td valign='top'><p>
+			<img src="/pic/max-pooling drop.png" height="100" width="100" />
+			</p></td>
+			<td valign='top' style="padding-left:30px">
+			<h4>Dropout for regularization of convolutional neural networks</h4>
+			We demonstrate that max-pooling dropout is equivalent to randomly picking activation based on a multinomial distribution at training time. In light of this insight, we advocate employing our proposed probabilistic weighted pooling, instead of commonly used max-pooling, to act as model averaging at test time.
+			</td>
+		</tr>
+		<tr>
+			<td valign='top'><p>
+			<img src="/pic/over-weighting.png" height="100" width="100" />
+			</p></td>
+			<td valign='top' style="padding-left:30px">
+			<h4>Supervised term weighting for text categorization</h4>
+			This paper shows that supervised term weighting should not just assign large weights to imbalanced terms, but should also control the trade-off between over-weighting and under-weighting. To prevent over-weighting, we present three regularization techniques: add-one smoothing, sublinear scaling and bias term. 
+			</td>
+		</tr>	
+	</table>
+	<p> <h2>Publications</h2> </p>
+	<p>[1] Haibing Wu, Xiaodong Gu. Balancing between over-weighting and under-weighting in supervised term weighting. arXiv:1604.04007.</p>
+	<p>[2] Haibing Wu, Yiwei Gu, Shangdi Sun, Xiaodong Gu. Aspect-based opinion summarization with convolutional neural networks. The 2016 International Joint Conference on Neural Networks (IJCNN 2016), Vancouver, Canada.</p>
+	<p>[3] Haibing Wu, Xiaodong Gu. Towards dropout training for convolutional neural networks. Neural Networks. 2015, 71: 1-10.</p>
+	<p>[4] Haibing Wu, Xiaodong Gu. Max-pooling dropout for regularization of convolutional neural networks. The 22th International Conference on Neural Information Processing (ICONIP 2015), Istanbul, Turkey: 46-54.</p>
+	<p>[5] Haibing Wu, Xiaodong Gu. Reducing over-weighting in supervised term weighting for sentiment analysis. The 25th International Conference on Computational Linguistics (Coling 2014), Dublin, Ireland: 1322-1330.</p>
+	</div>
+	
+</body>
 </html>
