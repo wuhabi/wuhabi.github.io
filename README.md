@@ -1,3 +1,3 @@
 # Haibing Wu
 
-This is my personal webset.
+This is my personal website.
